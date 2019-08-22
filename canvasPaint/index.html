@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasPaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__header">
+            <h1>Canvas Paint</h1>
+        </div>
+        <div class="container__tools">
+            <p>Select color: <input id="color" type="color"></p>
+            <div class="container__slider">
+                <p>Select line thickness: <input type="range" id="range" min="1" max="10" class="slider"></p>
+            </div>
+            <button type="button" id="clear">Clear All</button>
+        </div>
+        <div class="container__canvas">
+            <canvas id="canvas" width="1280" height="720" class="container__canvas-class"></canvas>
+        </div>
+    </div>
+    <script src="js/model.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
